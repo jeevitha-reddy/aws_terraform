@@ -8,6 +8,7 @@ variable "instance_type" {
   type = string
 }
 
+# tags playing keyrole in terraform and billing 
 variable "tags" {
   type = map
   default = {
