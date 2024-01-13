@@ -1,7 +1,7 @@
 resource "aws_security_group" "roboshop-all" { 
     name        = "dynamic-demo"
     description = "dynamic-demo"
-
+# sg making dynamic
     dynamic ingress {
         for_each = var.ingress_rules
         content {
